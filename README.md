@@ -11,6 +11,6 @@ Construir un clasificador que aprende a distinguir entre tweets negativos/serios
 - Variables:
 
 
-### 3. Modelos a utilizar
+### 3. Modelos a utilizar (NLP).
 
 ### 4. Trabajos relacionados

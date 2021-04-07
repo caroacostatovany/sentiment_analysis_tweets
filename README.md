@@ -1,12 +1,14 @@
-## Tweet sentiment Analysis
+## Análisis de sentimientos en Tweets
+________________
 
 ### 1. Objetivo
 
-Construir un clasificador que aprende a distinguir entre tweets negativos/serios y positivos. 
+El objetivo de esta práctica es construir un clasificador que aprenda a distinguir entre tweets serios o negativos y positivos. 
 
 ### 2. EDA datos
 
-- Fuente:
+Los datos que utilizaremos fueron datos recolectados de twitter acerca del Huracán Harvey y tweets con intención negativa o seria.
+- Fuente: 
 - Número observaciones:
 - Variables:
 
@@ -21,6 +23,54 @@ Se aplicará un preprocesamiento a los datos para estandarizarlos, quitar stopwo
 
 El Procesamiento del Lenguaje Natural (NLP por sus siglas en inglés) es el campo de estudio que se enfoca en la comprensión del lenguaje humano mediante una computadora o varias conectadas entres si (Clusters). Siendo una rama de la Inteligencia Artificial (Aprendizaje profundo), engloba parte de la Ciencia de Datos y la lingüística. 
 
-En NLP las computadoras analizan el leguaje humano, lo interpretan y dan significado para que pueda ser utilizado de manera práctica. Se listan algunas actividades que se pueden realizar al usar NLP tales como resumen automático de textos, traducción de idiomas, extracción de relaciones, reconocimiento del habla, clasificación de artículos por temáticas o usos, análisis de sentimiento, etc.  
+En NLP las computadoras analizan el lenguaje humano, lo interpretan y dan significado para que pueda ser utilizado de manera práctica. Se listan algunas actividades que se pueden realizar al usar NLP tales como resumen automático de textos, traducción de idiomas, extracción de relaciones, reconocimiento del habla, clasificación de artículos por temáticas o usos, análisis de sentimiento, etc.
+
 
 ### 4. Trabajos relacionados
+
+#### 4.1 Clasificación de texto para análisis de sentimiento con el clasificador Naive Bayes
+
+En este [trabajo](https://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/) 
+se enfocaron en la clasificación de sentimientos positivos o negativos, para mantener simplicidad. Utilizaron los datos 
+que vienen en el paquete de NLTK para el corpus de reviews de películas.
+Empezaron utilizando un simple **clasificador de Naive Bayes** como baseline, utilizando la extracción de variables de 
+forma booleana. 
+Con poca manipulación de los datos lograron obtener una exactitud de 73%, lo cual es cerca de la exactitud humana; se 
+dice que los humanos concuerdan en sentimientos sólo el 80% del tiempo.
+
+#### 4.2 Análisis de sentimientos en Twitter utilizando python y NLTK
+
+El objetivo de este [proyecto](http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/) es 
+clasificar un tweet positivo o negativo. Utilizó datos que extrajo manualmente, y fueron alrededor de 600 tweets 
+positivos y 600 tweets negativos para el entrenamiento del clasificador, utilizó tweets sin hashtags, menciones o 
+emojis.
+La única imputación que realizó fue eliminar las palabras menores de 2 letras y tener todo en minúsculas. 
+Para crear el clasificador, primero se hizo una extracción de variables para saber cuáles eran las variables 
+relevantes; y el clasificador utilizado fue **Naives Bayes de NLTK**. Con sus datos de prueba lograron un 80% de
+exactitud.
+
+#### 4.3 Aprendizaje de máquina con H20, Twitter y python
+
+La idea de este [proyecto](https://www.linkedin.com/pulse/social-machine-learning-h2o-twitter-python-marios-michailidis/)
+es extraer tweets relevantes para el caso del huracán Harvey, utilizando el dataset de 'sentiment140' que ya estan 
+etiquetados como sentimientos positivos o negativos, después construir un clasificador que aprenda a diferenciar entre 
+un tweet negativo o serio y un tweet positivo; posterioremente utilizar este clasificador para rankear los tweets 
+basados en un porcentaje de severidad y así poder extraer el top de tweets que necesiten ayuda en la situación actual, 
+en este caso, el Huracán Harvey o Irma.
+Para la transformación de sus datos utilizaron **TF-IDF**, éste extrae para cada palabra qué tan importante es para 
+ese tweet. 
+Después de la transformación, utilizaron **H20 Gradient Boosting** para entrenar y obtener el clasificador que 
+diferencíe entre un tweet positivo o negativo. 
+
+
+# Referencias
+- [Clasificación de texto para análisis de sentimiento con el clasificador Naive Bayes](https://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/)
+- [Análisis de sentimientos en Twitter utilizando python y NLTK](http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/)
+- [Aprendizaje de máquina con H20, Twitter y python](https://www.linkedin.com/pulse/social-machine-learning-h2o-twitter-python-marios-michailidis/)
+
+# Requerimientos
+________________
+
+Utilizaremos **python** y por ahora nuestros notebooks serán probados en `Google Colab`.
+
+

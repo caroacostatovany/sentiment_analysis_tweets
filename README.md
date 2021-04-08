@@ -8,9 +8,20 @@ El objetivo de esta práctica es construir un clasificador que aprenda a disting
 ### 2. EDA datos
 
 Los datos que utilizaremos fueron datos recolectados de twitter acerca del Huracán Harvey y tweets con intención negativa o seria.
-- Fuente: 
-- Número observaciones:
-- Variables:
+- **Fuente**: [Referencia 1](https://www.linkedin.com/pulse/social-machine-learning-h2o-twitter-python-marios-michailidis/), [Referencia 2](https://www.kaggle.com/kazanova/sentiment140).
+- **Número observaciones**: 1,600,000.
+- **Variables**:
+	- `target`: Polaridad del tweet [0=negativo, 2=neutral, 4=positivo].
+	- `ids`: ID tweet.
+	- `date`: Fecha y hora del tweet.
+	- `flag`: Si hubo algún tipo de QUERY.
+	- `user`: Usuario del tweet
+	- `text`: Texto del tweet.
+- **Formato de entrada (x)**: `text`.
+- **Formato de entrada (y)**: `target`.
+
+2.1. `target`:
+
 
 
 ### 3. Modelos a utilizar (NLP).

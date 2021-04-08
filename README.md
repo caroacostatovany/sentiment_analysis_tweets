@@ -11,16 +11,23 @@ Los datos que utilizaremos fueron datos recolectados de twitter acerca del Hurac
 - **Fuente**: [Referencia 1](https://www.linkedin.com/pulse/social-machine-learning-h2o-twitter-python-marios-michailidis/), [Referencia 2](https://www.kaggle.com/kazanova/sentiment140).
 - **Número observaciones**: 1,600,000.
 - **Variables**:
-	- `target`: Polaridad del tweet [0=negativo, 2=neutral, 4=positivo].
+	- `target`: Polaridad del tweet, positivo o negativo.
 	- `ids`: ID tweet.
 	- `date`: Fecha y hora del tweet.
 	- `flag`: Si hubo algún tipo de QUERY.
 	- `user`: Usuario del tweet
 	- `text`: Texto del tweet.
-- **Formato de entrada (x)**: `text`.
-- **Formato de entrada (y)**: `target`.
+- **Variable característica**: `text`.
+- **Variable etiqueta**: `target`.
 
-2.1. `target`:
+#### Información general sobre variables:
+
+- `target`: 50\% de las observaciones pertenecen a la categoría POSITIVO y 50\% a NEGATIVO.
+- `ids`: 1,598,315 de los identificadores son únicos.
+- `date`: El formato de esta variable es como el siguiente: *Mon Apr 06 22:19:45 PDT 2009*.
+- `flag`: Esta variable tiene en todas sus observaciones NO_QUERY.
+- `user`: Tenemos 659,775 usuarios únicos.
+- `text`: Se realizarán análisis de frecuencia de palabras para cada etiqueta. 
 
 
 

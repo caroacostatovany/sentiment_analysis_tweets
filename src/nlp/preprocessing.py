@@ -1,7 +1,7 @@
 """
 Módulo para hacer preprocesamiento de los datos
 """
-
+import re
 from nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
 
 

@@ -2,7 +2,7 @@
 Módulo para hacer preprocesamiento de los datos
 """
 
-from src.nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
+from nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
 
 
 def convierte_a_minusculas(df):

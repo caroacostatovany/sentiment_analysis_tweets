@@ -1,3 +1,4 @@
+import nltk
 from nltk.corpus import stopwords
 
 nltk.download('stopwords') # Use predefined list of stopwords from nltk

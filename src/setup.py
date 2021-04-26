@@ -13,7 +13,6 @@ setup(name="nlptweet",
                           "numpy",
                           "pandas",
                           "sphinx",
-                          "nltk",
-                          "re"
+                          "nltk"
                           ],
       )

@@ -1,7 +1,7 @@
 """
 Módulo para hacer preprocesamiento de los datos
 """
-import re
+import re as re
 from nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
 
 
@@ -42,6 +42,11 @@ def separar_abreviaciones(phrase):
 
 
 def remove_stopwords(phrase):
+    """
+
+    :param phrase:
+    :return:
+    """
     phrase = ' '.join(e.lower() for e in phrase.split() if e.lower() not in EXTRA_STOPWORDS)
     phrase = ' '.join(e.lower() for e in phrase.split() if e.lower() not in NLTK_STOPWORDS)
     return phrase

@@ -91,4 +91,7 @@ ________________
 
 Utilizaremos **python** y por ahora nuestros notebooks serán probados en `Google Colab`.
 
+Para instalar nuestro paquete de limpieza de tweets:
+> pip install "git+https://github.com/ElenaVillano/sentiment_analysis_tweets.git#egg=nlptweet&subdirectory=src"
+
 

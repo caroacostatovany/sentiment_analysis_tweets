@@ -76,7 +76,7 @@ def quitar_hashtag(phrase):
     :param phrase:
     :return:
     """
-    return re.sub("#(\S+)", "", phrase)
+    return re.sub("#(\S)+", "", phrase)
 
 
 def quitar_RT(phrase):

@@ -120,29 +120,3 @@ def quitar_nonascii(phrase):
     """
     return phrase.encode('ascii', errors='ignore').decode('utf-8')
 
-
-def decontracted(phrase):
-    """
-    Aux funcción para substituir abreviaciones
-    :param phrase:
-    :return:
-    """
-    phrase = re.sub(r"won't", "will not", phrase)
-    phrase = re.sub(r"can\'t", "can not", phrase)
-    phrase = re.sub(r"n\'t", " not", phrase)
-    phrase = re.sub(r"\'re", " are", phrase)
-    phrase = re.sub(r"\'s", " is", phrase)
-    phrase = re.sub(r"\'d", " would", phrase)
-    phrase = re.sub(r"\'ll", " will", phrase)
-    phrase = re.sub(r"\'t", " not", phrase)
-    phrase = re.sub(r"\'ve", " have", phrase)
-    phrase = re.sub(r"\'m", " am", phrase)
-    return phrase
-
-# Función auxiliar para remover stopwords y otras estandarizaciones de texto
-# (Aqui puedes incluir el lematizador o stemming si gustas explorarlos)
-def remove_stopwords(phrase):
-    phrase = ' '.join(e.lower() for e in phrase.split() if e.lower() not in stopwords)
-    phrase = ' '.join(e.lower() for e in phrase.split() if e.lower() not in STOPWORDS)
-    return phrase
-

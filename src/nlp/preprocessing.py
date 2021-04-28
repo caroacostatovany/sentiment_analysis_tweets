@@ -67,7 +67,7 @@ def reemplazar_usuarios(phrase):
     :param phrase:
     :return:
     """
-    return re.sub("@[\S]+. 2", "user_mention", phrase)
+    return re.sub("@[\S]+", "user_mention", phrase)
 
 
 def quitar_hashtag(phrase):

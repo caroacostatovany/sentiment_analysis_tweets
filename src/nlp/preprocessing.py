@@ -1,6 +1,8 @@
 """
 Módulo para hacer preprocesamiento de los datos
 """
+#from nltk.tokenize import sent_tokenize, word_tokenize
+#from nltk.stem import PorterStemmer
 import re as re
 from nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
 
@@ -120,3 +122,12 @@ def quitar_nonascii(phrase):
     """
     return phrase.encode('ascii', errors='ignore').decode('utf-8')
 
+
+def oracion_raiz(sentence):
+    token_words = word_tokenize(sentence)
+    token_words
+    stem_sentence = []
+    for word in token_words:
+        stem_sentence.append(PorterStemmer().stem(word))
+        stem_sentence.append(" ")
+    return "".join(stem_sentence)

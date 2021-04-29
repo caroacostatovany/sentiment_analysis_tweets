@@ -1,8 +1,8 @@
 """
 Módulo para hacer preprocesamiento de los datos
 """
-#from nltk.tokenize import sent_tokenize, word_tokenize
-#from nltk.stem import PorterStemmer
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.stem import PorterStemmer
 import re as re
 from nlp.utils.constants import NLTK_STOPWORDS, EXTRA_STOPWORDS
 

@@ -39,6 +39,7 @@ def separar_abreviaciones(phrase):
     phrase = re.sub(r"\'t", " not", phrase)
     phrase = re.sub(r"\'ve", " have", phrase)
     phrase = re.sub(r"\'m", " am", phrase)
+    phrase = re.sub(r" u ", " you ", phrase)
 
     return phrase
 
@@ -60,7 +61,7 @@ def reemplazar_urls(phrase):
     :param phrase:
     :return:
     """
-    return re.sub("((www\.[\S]+)|(https?://[\S]+))", "url", phrase)
+    return re.sub("((www\.[\S]+)|(https?://[\S]+))", "", phrase)
 
 
 def reemplazar_usuarios(phrase):
@@ -69,7 +70,7 @@ def reemplazar_usuarios(phrase):
     :param phrase:
     :return:
     """
-    return re.sub("@[\S]+", "user_mention", phrase)
+    return re.sub("@[\S]+", "", phrase)
 
 
 def quitar_hashtag(phrase):

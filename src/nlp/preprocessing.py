@@ -1,6 +1,10 @@
 """
 Módulo para hacer preprocesamiento de los datos
 """
+
+import nltk
+nltk.download('punkt')
+
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.stem import PorterStemmer
 import re as re

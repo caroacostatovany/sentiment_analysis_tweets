@@ -153,5 +153,6 @@ def quitar_caracteres_html(phrase):
     phrase = re.sub("&quot;", "", phrase)
     phrase = re.sub("&gt;", "", phrase)
     phrase = re.sub("&lt;", "", phrase)
+    phrase = re.sub("&amp;", "", phrase)
 
     return phrase

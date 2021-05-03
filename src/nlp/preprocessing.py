@@ -142,3 +142,12 @@ def modificar_etiqueta(df):
     """
     df.loc[df.target == 4, 'target'] = 1
     return df
+
+
+def quitar_quot(phrase):
+    """
+
+    :param phrase:
+    :return:
+    """
+    return re.sub("&quot;", "", phrase)

@@ -132,3 +132,13 @@ def oracion_raiz(sentence):
         stem_sentence.append(PorterStemmer().stem(word))
         stem_sentence.append(" ")
     return "".join(stem_sentence)
+
+
+def modificar_etiqueta(df):
+    """
+
+    :param df:
+    :return:
+    """
+    df.loc[df.target == 4, 'target'] = 1
+    return df

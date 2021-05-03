@@ -144,10 +144,14 @@ def modificar_etiqueta(df):
     return df
 
 
-def quitar_quot(phrase):
+def quitar_caracteres_html(phrase):
     """
 
     :param phrase:
     :return:
     """
-    return re.sub("&quot;", "", phrase)
+    phrase = re.sub("&quot;", "", phrase)
+    phrase = re.sub("&gt;", "", phrase)
+    phrase = re.sub("&lt;", "", phrase)
+
+    return phrase

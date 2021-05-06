@@ -1,0 +1,4 @@
+# Ignorando datos
+datos/trainingandtestdata/*.csv
+.idea/
+*.ipynb_checkpoints

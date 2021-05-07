@@ -30,7 +30,7 @@ Para instalar nuestro paquete de limpieza de tweets:
 
 ### Modelos
 
-El código lo puedes observar en la carpeta de notebooks, que viene desde la implementación de la limpieza hasta ejemplos de varios modelo. 
+El código lo puedes observar en la carpeta de notebooks, que viene desde la implementación de la limpieza, hasta ejemplos de los mejores modelos. 
 
 ### Algunas referencias:
 - [Clasificación de texto para análisis de sentimiento con el clasificador Naive Bayes](https://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/)

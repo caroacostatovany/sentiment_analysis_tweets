@@ -5,8 +5,8 @@ ________________
 
 El objetivo de este trabajo es construir un clasificador que aprenda a distinguir entre tweets positivos o negativos. 
 
-- El documento que describe todo trabajo lo encuentras en este repositorio [documentacion/Artículo_final.pdf](https://github.com/ElenaVillano/sentiment_analysis_tweets/blob/main/documentacion/Art%C3%ADculo_final.pdf).
-- Así como la presentación que utilizada en [documentacion/Presentación.pdf](https://github.com/ElenaVillano/sentiment_analysis_tweets/blob/main/documentacion/Presentaci%C3%B3n.pdf). 
+- El documento que describe todo el presente trabajo, lo encuentras en este repositorio [documentacion/Artículo_final.pdf](https://github.com/ElenaVillano/sentiment_analysis_tweets/blob/main/documentacion/Art%C3%ADculo_final.pdf).
+- La presentación que utilizada en [documentacion/Presentación.pdf](https://github.com/ElenaVillano/sentiment_analysis_tweets/blob/main/documentacion/Presentaci%C3%B3n.pdf). 
 
 ### Datos
 
